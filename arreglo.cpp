@@ -35,6 +35,11 @@ void Arreglo::insertarInicio(int v)
     cont++;
 }
 
+size_t Arreglo::size()
+{
+    return cont;
+}
+
 void Arreglo::expandir()
 {
     int *nuevo = new int[tam+MAX];
