@@ -15,6 +15,7 @@ public:
     Arreglo();
     ~Arreglo();
     void insertarFinal(int v);
+    void insertarInicio(int v);
     
 private:
     void expandir();

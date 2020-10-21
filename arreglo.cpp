@@ -22,6 +22,19 @@ void Arreglo::insertarFinal(int v)
     cont++;
 }
 
+void Arreglo::insertarInicio(int v)
+{
+    if(cont == tam){
+        //expandir arreglo
+        expandir();
+    }
+    for(size_t i = cont; i > 0; i--){
+        arreglo[i] = arreglo[i-1];
+    }
+    arreglo[0] = v;
+    cont++;
+}
+
 void Arreglo::expandir()
 {
     int *nuevo = new int[tam+MAX];
