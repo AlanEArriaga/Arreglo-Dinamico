@@ -10,11 +10,16 @@ void modificar(int *a){
 int main()
 {
     Arreglo arreglo;
-    arreglo.insertarFinal(10);
-    arreglo.insertarFinal(0);
-    arreglo.insertarFinal(1);
-    arreglo.insertarFinal(4);
-    arreglo.insertarInicio(-10);
+    arreglo.insertarFinal("a");
+    arreglo.insertarFinal("b");
+    arreglo.insertarFinal("c");
+    arreglo.insertarFinal("d");
+    arreglo.insertarFinal("e");
+    arreglo.insertarFinal("f");
+    arreglo.insertarFinal("g");
+    arreglo.insertarFinal("h");
+    arreglo.insertarInicio("x");
+    arreglo.insertarInicio("z");
 
     for (size_t i = 0; i < arreglo.size(); i++)
     {

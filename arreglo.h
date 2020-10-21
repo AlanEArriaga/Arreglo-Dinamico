@@ -6,7 +6,7 @@
 using namespace std;
 
 class Arreglo{
-    int *arreglo;
+    string *arreglo;
     size_t tam;
     size_t cont;
     const static size_t MAX = 5;
@@ -14,10 +14,10 @@ class Arreglo{
 public:
     Arreglo();
     ~Arreglo();
-    void insertarFinal(int v);
-    void insertarInicio(int v);
+    void insertarFinal(const string &);
+    void insertarInicio(const string &);
     size_t size();
-    int operator[](size_t p)
+    string operator[](size_t p)
     {
         return arreglo[p];
     }
