@@ -16,10 +16,15 @@ public:
     ~Arreglo();
     void insertarFinal(int v);
     void insertarInicio(int v);
+    size_t size();
+    int operator[](size_t p)
+    {
+        return arreglo[p];
+    }
     
 private:
     void expandir();
 
-}
+};
 
-#endif ARREGLO_H
+#endif 
